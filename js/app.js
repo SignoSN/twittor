@@ -1,6 +1,14 @@
 // Registro del Service Worker
+
+// comprobar dominios
+const locasion = window.location.href;
+let swPath = '/twittor/sw.js';
+
+if( locasion.includes('localhost') ){
+    swPath = '/sw.js'
+}
 if( navigator.serviceWorker ){
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register( swPath );
 }
 // Referencias de jQuery
 

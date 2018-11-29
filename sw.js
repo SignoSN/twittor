@@ -7,7 +7,7 @@ const DYNAMIC_CACHE = 'dynamic-v1';
 const HARD_CACHE = 'hard-v1';
 
 const APP_SHELL = [
-	'/',
+	// '/',
 	'/index.html',
 	'/css/style.css',
 	'/img/favicon.ico',
